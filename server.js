@@ -6,13 +6,13 @@ const Data = require("./data.js")
 
 //  App config
 const app = express();
-const port = 8000;
+const port = process.env.Port || 8000;
 
 //middleware
 app.use(express.json())
 app.use((req, res, next)=>{
-    res.setHeaders('Access-Control_Allow_Origin', '*'),
-    res.setHeaders('Access-Control_Allow_Headers', '*'),
+    res.setHeader('Access-Control_Allow_Origin', '*'),
+    res.setHeader('Access-Control_Allow_Headers', '*'),
     next()
 })
 

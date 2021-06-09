@@ -11,4 +11,4 @@ const tiktokSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('titktokVideo', tiktokSchema);
+module.exports = mongoose.model('titktokVideos', tiktokSchema);
