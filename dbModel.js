@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+
 
 const tiktokSchema = mongoose.Schema({
     url: String,
@@ -11,4 +12,4 @@ const tiktokSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('titktokVideos', tiktokSchema);
+export default mongoose.model('titktokVideos', tiktokSchema);

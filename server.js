@@ -1,8 +1,7 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const Videos = require("./dbModel.js");
-
-const Data = require("./data.js")
+import express from "express";
+import mongoose from "mongoose";
+import Videos from "./dbModel.js";
+import Data from "./data.js"
 
 //  App config
 const app = express();
